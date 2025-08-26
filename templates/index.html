@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-Activated AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Voice-Activated AI Chatbot</h1>
+            <p>Speak or type your commands to interact with the AI assistant</p>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-box">
+                <div class="bot-message">
+                    <p>Hello! I'm your AI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <input type="text" id="text-input" placeholder="Type your command here...">
+                <button id="text-send">Send</button>
+                <button id="voice-button">🎤 Speak</button>
+            </div>
+            
+            <div class="commands">
+                <h3>Try these commands:</h3>
+                <ul>
+                    <li>"Hello" or "Hi" - Greet the assistant</li>
+                    <li>"What time is it?" - Get current time</li>
+                    <li>"Search for python tutorials" - Search the web</li>
+                    <li>"Wikipedia artificial intelligence" - Get Wikipedia summary</li>
+                    <li>"Open YouTube" - Open YouTube in browser</li>
+                    <li>"Goodbye" - End the conversation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
